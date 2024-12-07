@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'agave';
+  src: url('/assets/fonts/agave-regular.woff2') format('woff2'),
+       url('/assets/fonts/agave-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*, *::after, *::before {
+  font-family: 'agave', monospace;
+  font-size: 16px;
+  font-weight: normal;
+  color: white;
+}
+
+:root, body, #app {
+  @apply bg-zinc-950;
+  min-height: 100vh;
+}
